@@ -18,5 +18,6 @@ console.log(dog); // 없는 프로퍼티를 부르면 그냥 동적으로 추가
 // 존재하지 않는 프로퍼티를 삭제하면 에러 없이 무시된다.
 delete dog.age;
 console.log(dog);
-delete dog.age;
+delete dog.age; // 걍무시
+console.log(dog);
 

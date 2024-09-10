@@ -29,7 +29,10 @@ num % 2 == 0 || console.log(" 홀수입니다. ");
 // 한마디로 그냥 연산자에 따라 읽으면서 참/거짓이 판단이 되는 순간 결과를 뿜는다고 생각하면 편하다.
 
 
+// console 하고싶은 객체가 null 이면 오류가 난다.
 let obj = null;
 // 객체라고 기대하는 변수가 null 또는 undefined  일 때
+// let val1 = obj.value; --> 안에 값을 찾으려는데 null 이니까 오류가 나게된다. 그러므로 밑의 형식으로 적어주거나 또는 ?를 사용하여 적어줘야 콘솔창에 오류가 나지 않을 수 있다.
+let val = obj && obj.value; 
+let val1 = obj?.value;
 
-let val = obj.value;

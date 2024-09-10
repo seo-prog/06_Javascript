@@ -11,3 +11,5 @@ console.log(parseInt('10'));
 console.log(parseFloat('10'));
 console.log(parseInt("10.01")); // 소수점 절삭
 console.log(parseFloat("10.01")); // 소수점 살림
+
+

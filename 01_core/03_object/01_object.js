@@ -1,7 +1,7 @@
 /**
  * object (객체)
  * 자바스크립트는 객체 기반 프로그래밍 언어로 원시 값을 제외한 나머지 값(함수, 배열 등) 은 모두 객체이다.
- * 객체는 0개 이상의 프로퍼티로 구성된 집합니며 프로처티는 key 와 value 로 구성된다.
+ * 객체는 0개 이상의 프로퍼티로 구성된 집합니며 프로퍼티는 key 와 value 로 구성된다.
  * 자바스크립트에서 사용할 수 있는 모든 값은 프로퍼티 값이 될 수 있다.
  * 프로퍼티 값이 함수일 경우 method 라고 부른다.
  * 
@@ -36,3 +36,16 @@ student2.greet();
 let student3 = {};
 console.log(typeof student3);
 console.log(student3);
+// 아무것도 할당하지 않으면 빈 객체가 생성이 된다.
+
+
+class Student4{
+    constructor(name,age){
+        this.name = name;
+        this.age = age;
+    }
+}
+const studentA = new Student4("이순신",30);
+console.log(studentA);
+
+

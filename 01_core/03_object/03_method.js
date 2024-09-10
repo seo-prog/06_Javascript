@@ -10,7 +10,7 @@ let dog = {
     //     console.log(`${this.name}는 ${food}를 맛있게 먹어요`);
     // }
 
-    eat : (name, food)=>{ // 화살표함수는 this 값을 못다.
+    eat : (name, food)=>{ 
         console.log(`${name}는 ${food}를 맛있게 먹어요`);
     }
 }

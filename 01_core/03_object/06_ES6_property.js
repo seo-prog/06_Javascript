@@ -24,14 +24,14 @@ let dog = {
         console.log(`${this.name} 은 ${food} 를 맛있게 먹어요`);
     }
 }
-
 dog.eat("고구마");
+
+
 
  let dog2 = {
     name : "뽀삐",
     eat(food){
         console.log(`${this.name} 은 ${food} 를 맛있게 먹어요`);
-
     }
  }
  dog2.eat("고구마");

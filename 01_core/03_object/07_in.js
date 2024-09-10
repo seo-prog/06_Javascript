@@ -18,5 +18,7 @@ console.log("height" in student);
 
 for(let key in student){
     console.log(`key : ${key}`);
-    console.log(`student[key] : ${student[key]}`);
+    console.log(`student[key] : ${student[key]}`); // --> value 가 출력되도록 한거임
 }
+
+

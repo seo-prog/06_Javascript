@@ -49,5 +49,7 @@ console.log(`hello !== hello : ${'hello' !== 'hello'}`);
 
 // 대소비교
 console.log(`apple < banana : ${'apple' < 'banana'}`);
-console.log(`cat < Zoo : ${'cat' < 'Zoo'}`);
+console.log(`cat < Zoo : ${'cat' < 'Zoo'}`);// 맨 첫자로 일단 아스키코드비교, 다음자 다음자 순서대로 아스키코드로 비교한다.
+
+
 

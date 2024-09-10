@@ -14,3 +14,4 @@ console.log(String(true));
 console.log((10).toString());
 console.log((NaN).toString());
 console.log((Infinity).toString());
+

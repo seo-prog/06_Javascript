@@ -16,7 +16,7 @@ console.log("height" in student);
 
 // for in 반복문
 
-for(let key in student){
+for(let key in student){ //내부 모든 키 순회
     console.log(`key : ${key}`);
     console.log(`student[key] : ${student[key]}`); // --> value 가 출력되도록 한거임
 }

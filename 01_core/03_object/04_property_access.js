@@ -17,6 +17,7 @@ console.log(dog['name']);
 
 let obj={
     'dash-key' : 'dash-value', // q변수가 아니라 문자니까 ''
+    '1a':3,
     0:1
 
 }
@@ -28,7 +29,10 @@ let obj={
 // 대소문자를 구분함
 // 카멜케이스로 작성함
 
+// 네이밍 규칙에 어긋나면 []로 꺼내줄 수 있다. 그리고 저렇게 a1 같은 경우 바로 [1a]으로는 못써주고 ['1a'] 로는 가능하다.
 console.log(obj['dash-key']); // 위에 키값이 규칙에 어긋났기떄문에  [] 사용해서 꺼내줘야 한다.
+console.log(obj['1a']);
+
 console.log(obj['0']);
 console.log([0]);
 // console.log(obj.0); 이건 안된다 !

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>01. inline style</h1>
+    <pre>
+        Element.style 프로퍼티는 setter 와 getter 가 모두 존재하는 접근자 프로퍼티로,
+        프로퍼티 요소 노드의 인라인 스타일을 취득하거나 추가 또는 변경한다..
+    </pre>
+
+    <div>area</div> <!--구분(?)이 가능한 박스..느낌,,-->
+    <input type="number" onchange="test()"/> <!--사용자한테 받을입력창.. 그러니 value값은 1개-->
+
+    <script>
+        const $area = document.querySelector("div");
+   
+        $area.style.width = "100px";
+        $area.style.height = "100px";
+        $area.style.backgroundColor = "gray";
+
+        function test(){
+
+            const $area1 = document.querySelector("input");
+            const $wiiidth = $area1.value;
+            $area.style.width = $wiiidth + "px";
+
+        }
+
+    </script>
+</body>
+</html>

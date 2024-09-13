@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!---
+    버튼 3개를 만들어서 
+    1번을 누르면 안녕하세요가 빨간색으로
+     2번을 누르면 안녕하세요가 hi 로 
+    3번을 누르면 hi 라는 alert 출력-->
+
+    <h1 id="message">안녕하세요</h1>
+
+    <button onclick = "one()">나는야 1번버튼~!</button>
+    <button onclick = "two()">나는야 2번버튼~!</button>
+    <button onclick = "alert('hi~hi~~~')">나는야 3번버튼~!</button>
+    <button id="third">나는야 4번버튼~!~!</button>
+
+    <script>
+        const $oioi=document.querySelector("message");
+
+        function one(){
+            const $red = document.getElementById("message");
+            $red.style.color = "red";
+        }
+
+        function two(){
+            const $name = document.getElementById("message");
+            $name.innerHTML = "hi";// 안의 텍스트를 꺼낼떄는 innertext 또는 innerhtml~!
+        }
+
+        const $ee = document.querySelector("third");
+
+        const hanleClick1 = () =>{
+            $oioi.addEventListener("click", handleClick1)
+        }
+
+    </script>
+
+
+    
+</body>
+</html>

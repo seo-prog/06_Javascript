@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>01. 아이디를 이용한 요소 노드 취득</h1>
+
+    <p>
+        노드는 DOM 트리를 구성하는 기본 단위이다..
+        HTML 문서가 로드되면 브라우저는 이를 파싱하여 DOM 트리를 생성하고 각 HTML 태그와 그 내용을 노드로 표현하는데 
+        그 유형으로는 요소 노드 (P,A 등 태그 들), 속성 노드 (HTML 요소의 속성들 class,id), 텍스트 노드(요소 내의 텍스트) 등이 있다.
+    </p>
+
+    <p>
+        Document.getElementById() 메소드는 인수로 전달한 id 속성 값을 갖는 하나의 요소 노드를 탐색하여 반환한다..
+        문서 내의 중복 된 id 값을 갖는 html 요소가 여러 개 존재 하더라도 에러가 발생하진 않지만 해당 id 값을 갖는 첫 번째 요소 노드만 반환한다.
+    </p>
+
+    <div id = "area1" class = "area">
+        div 영역
+        <p id = "area2">p 영역</p> 
+    </div>
+
+    <script> // 보통 젤 하단에 작성을 한다.
+    // 전역변수처럼 id 를 바로 가져다가 쓸 수 있찌만 밑에처럼 객체에 담아서 써주는걸 권장한다.
+    const $elem = document.getElementById("area1"); // $elem 에 id 가 area1 인 친구의 정보들을 $elem 에 담아준거( 연결해둔다는 의미)
+    // dom 을 참조할 떄 $써주는게 약간 룰...
+    $elem.style.backgroundColor = "skyblue";
+    console.log($elem);
+
+    area2.style.backgroundColor = "red";
+    </script>
+
+    
+</body>
+</html>

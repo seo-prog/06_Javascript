@@ -12,7 +12,7 @@ console.log(arr2);
 const arr3 = new Array(10);
 console.log(arr3);
 
-// 전ㄴ달 된 인수가 2개 이상이거나 숫자가 아닌ㄴ 경우 인수를 요소로 갖는 배열 생성
+// 전달 된 인수가 2개 이상이거나 숫자가 아닌 경우 인수를 요소로 갖는 배열 생성
 const arr4 = new Array(1,2,3);
 console.log(arr4);
 

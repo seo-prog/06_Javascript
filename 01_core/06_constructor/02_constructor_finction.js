@@ -26,7 +26,7 @@ function Student(name, age){
 // 기본적으로 자바스크립트에서는 1. 클래스에서 만들어진 객체, 2.생성자함수로 만들어진 객체만 인스턴드라고 부를 수 있따.
 // 가장 큰 범주인 오브젝트 안에 인스턴스가 들어있다고 보면 되는거다.
 
-const student3 = new Student("장보고",30);
+const student3 = new Student("장보고",30); 
 const student4 = new Student("최서연",10);
 
 // 메소드 호출

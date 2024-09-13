@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>03. 형제 노드</h1>
+    <ol id = "node">
+        <li> <!--여기서 firstchild 는 개행문자다 !-->
+            node.previousSibling : 
+            형제 노드 중 자신의 이전 형제 노드를 탐색하여 반환
+        </li>
+        <li>
+            node.nextSibling : 
+            형제 노드 중 자신의 다음 형제 노드를 탐색하여 반환
+
+        </li>
+    </ol>
+
+
+    <script>
+        // element 붙은것만 요소를 끄집어내기에 개행문자가 포함이 안되지만 
+        // 나머지는 개행문자도 자식 노드에 포함된다고 볼 수 있다. 
+        const $node = document.getElementById("node");
+
+        // 구조 분해 할당
+        const {firstChild} = $node; 
+        // {}안에 내용만 바꿔줘도 가능.
+        // firstchild 를 추출해서 담아준건데 이 노드의 firstchild 는 개행문자이므로 text 라고 찍히는거다.
+        console.log(firstChild);
+
+        const{firstElementChild} = $node;
+        console.log(firstElementChild);
+
+        const{nextSibling} = firstChild; //firstChild 에서 nextSibling 을 찾는거다.
+        console.log(nextSibling);
+
+
+        const {previousSibling} = nextSibling;
+        console.log(previousSibling);
+
+
+    </script>
+</body>
+</html>
